@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mastercontainer">
+        <div class="parent">
+            <div class="headings">
+                <h1 id="title">Register</h1>
+                <p id="description">Enter your details below</p>
+            </div>
+
+            <div class="form">
+                <form id="survey-form" action="">
+                    <br>
+                    <div id="namediv" class="labelinputcontainer">
+                        <label for="name" id="name-label"> Name
+                            <input type="text" id="name" placeholder="Enter your name" name="name">
+                        </label>
+                    </div>
+                    <br>
+                    <div id="emaildiv" class="labelinputcontainer">
+                        <label for="email" id="email-label"> Email
+                            <input type="email" id="email" placeholder="Enter your email" name="email">
+                        </label>
+                    </div>
+                    <br>
+                    <div id="agediv" class="labelinputcontainer">
+                        <label for="number" id="number-label"> Age
+                            <input type="number" id="number" placeholder="Age" name="number">
+                        </label>
+                    </div>
+                    <br>
+                    <div class="radiocontainer labelinputcontainer" id="genderdiv" >
+                        <div>
+                            <p>Please specify your gender:</p>
+                            <input type="radio" name="gender" id="male">
+                            <label for="male"> Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female"> Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="nospec">
+                            <label for="nospec"> I'd rather not specify</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="sourcediv" class="labelinputcontainer">
+                        <label for="dropdown"> Where did you hear about us?
+                            <select name="dropdown" id="dropdown">
+                                <option value="search" disabled selected>Please select</option>
+                                <option value="search">Search Engine</option>
+                                <option value="ads">Advertisement</option>
+                                <option value="wom">Word of mouth</option>
+                                <option value="other">other</option>
+                            </select>
+                        </label>
+                    </div>
+                    <br>
+                    <div id="checkboxdiv" class="labelinputcontainer">
+                        <p>What products are you interested in?</p>
+                        <input type="checkbox" id="c1" name="c1" value="c1">
+                        <label for="c1">Option 1</label><br>
+                        <input type="checkbox" id="c2" name="c2" value="c2">
+                        <label for="c2">Option 2</label><br>
+                        <input type="checkbox" id="c3" name="c3" value="c3">
+                        <label for="c3">Option 3</label><br>
+                        <input type="checkbox" id="c4" name="c4" value="c4">
+                        <label for="c4">Option 4</label><br>
+                    </div>
+                    <br>
+                    <div id="messagediv" class="labelinputcontainer">
+                        <p>Any comments or suggestions?</p>
+                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    </div>
+                    <br>
+                    <div id="buttondiv" class="labelinputcontainer">
+                        <input type="submit" id="submit" name="submit" value="submit">
+                    </div>
+                </form>
+                <br>
+            </div>
+         </div>
+        
+        
+            
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
