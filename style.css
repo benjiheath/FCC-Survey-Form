@@ -1,12 +1,15 @@
 /* ------------------------------------------------
 # Global styling
 ------------------------------------------------ */
+:root {
+  --bg: rgba(0, 0, 0, 0.39);
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 input,
@@ -30,54 +33,63 @@ body {
 }
 
 .parent {
-  margin-top: 10vh;
-  height: 700px;
+  margin-top: 5vh;
+  height: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  color: White;
 }
 
 .headings {
-  background-color: rgba(0, 0, 0, 0.089);
-  width: 347.81px;
+  background-color: var(--bg);
+  width: 500px;
   text-align: center;
   border-radius: 4px;
 }
 
+.headings p {
+  margin-bottom: 10px;
+}
+
+.headings h1 {
+  margin-top: 10px;
+}
+
 .form {
-  background-color: rgba(0, 0, 0, 0.089);
+  background-color: var(--bg);
   border-radius: 4px;
   max-width: 1200px;
+  width: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: left;
+  font-weight: 600;
 }
 
-#name,
-#email,
-#number,
-#dropdown,
-#message,
-#submit {
-  width: 90%;
-  clear: both;
+#survey-form {
+  width: 500px;
 }
 
-#agediv {
-  display: flex;
-  width: 90%;
+.inputwidth {
+  display: block;
+  width: 100%;
 }
 
-#number {
-  /* width: 90%; */
+.inputmargin {
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 3px;
+  border-style: none;
 }
 
 .labelinputcontainer {
   margin: 0 0 0 20px;
+  width: 90%;
 }
 
 .radiocontainer {
@@ -85,4 +97,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+}
+
+.button {
+  padding: 2px;
+  margin: 5px 0 5px 0;
+  text-transform: uppercase;
+  color: #424242dc;
 }
