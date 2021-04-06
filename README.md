@@ -16,4 +16,4 @@
 
 ## Preview
 
-![screenshot](https://i.gyazo.com/2a9d88c03abd384c735aab8364d959b8.png)
+![screenshot](https://i.gyazo.com/f8d673b661366815519478c6a834e074.png)
