@@ -11,10 +11,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/benjiheath/FCC-Survey-Form">
-      Solution
-    </a>
-  </h3>
+    </h3>
 </div>
 
 ## Preview
