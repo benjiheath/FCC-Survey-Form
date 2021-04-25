@@ -4,15 +4,7 @@
     Small project from freeCodeCamp's Responsive Web Design course.
 </div>
 
-<<div align="center">
-
-  <h3>
-    <a href="https://jolly-wing-78f05f.netlify.app/">
-      Demo
-    </a>
-    <span> | </span>
-    </h3>
-</div>
+<div align="center">
 
 ## Preview
 
