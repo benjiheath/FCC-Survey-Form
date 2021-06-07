@@ -1,5 +1,10 @@
 :root {
-  --bg: rgba(0, 0, 0, 0.39);
+  --form-bg: rgb(255, 255, 255);
+  --box-shadow: 1px 1px 10px 2px rgb(110, 110, 110);
+  --gradient: linear-gradient(45deg, greenyellow, dodgerblue);
+  --input-border: 1px solid rgb(209, 209, 209);
+
+  --row: 700px;
 }
 
 /* ------------------------------------------------
@@ -10,7 +15,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Lato, Arial;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
 }
 
 input,
@@ -21,8 +28,11 @@ select {
 }
 
 body {
-  background: url(https://wallpaperaccess.com/full/1678073.jpg);
-  background-size: 2000px;
+  background-image: var(--gradient);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgb(82, 82, 82);
 }
 
 /* ------------------------------------------------
@@ -30,25 +40,26 @@ body {
 ------------------------------------------------ */
 
 .mastercontainer {
-  max-width: 1200px;
+  max-width: var(--row);
   margin: 0 auto;
+  width: 80vw;
 }
 
 .parent {
-  margin-top: 5vh;
-  height: 850px;
+  margin-top: 12vh;
+  height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  color: White;
+  justify-content: space-evenly;
 }
 
 .headings {
-  background-color: var(--bg);
-  width: 500px;
+  background-color: var(--form-bg);
   text-align: center;
   border-radius: 4px;
+  width: 80%;
+  box-shadow: var(--box-shadow);
 }
 
 .headings p {
@@ -60,21 +71,32 @@ body {
 }
 
 .form {
-  background-color: var(--bg);
+  background-color: var(--form-bg);
   border-radius: 4px;
-  max-width: 1200px;
-  width: 500px;
-  margin: 0 auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: left;
-  font-weight: 600;
+  height: 70%;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 100px;
 }
 
 #survey-form {
-  width: 500px;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #4BFFF9;
+  border-width: 1px;
 }
 
 .inputwidth {
@@ -86,7 +108,8 @@ body {
   margin-top: 5px;
   border-radius: 3px;
   padding: 3px;
-  border-style: none;
+  /* border-style: none; */
+  border: var(--input-border);
 }
 
 .labelinputcontainer {
@@ -102,8 +125,12 @@ body {
 }
 
 .button {
+  width: 100%;
   padding: 2px;
-  margin: 5px 0 5px 0;
+  margin: 10px 0 5px 0;
   text-transform: uppercase;
-  color: #424242dc;
+  border-radius: 3px;
+  background: var(--gradient);
+  color: white;
+  border: var(--input-border);
 }

@@ -1,4 +1,4 @@
-<h1 align="center">Survey/Registration form</h1>
+<h1 align="center">Registration form</h1>
 
 <div align="center">
     Small project from freeCodeCamp's Responsive Web Design course.
@@ -8,4 +8,4 @@
 
 ## Preview
 
-![screenshot](https://i.gyazo.com/f8d673b661366815519478c6a834e074.png)
+![screenshot](https://i.gyazo.com/260c12cef52347207872da111e7114fc.png)

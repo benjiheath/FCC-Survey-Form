@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,46 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet" />
 </head>
+
 <body>
     <div class="mastercontainer">
-        <div class="parent">
-            <div class="headings">
+        <div class="parent ">
+            <div class="headings ">
                 <h1 id="title">REGISTER</h1>
                 <br>
                 <p id="description">Enter your details below</p>
             </div>
 
-            <div class="form">
-                <form id="survey-form" action="">
-                    <br>
+            <div class="form ">
+                <form id="survey-form" class="" action="">
+
                     <div id="namediv" class="labelinputcontainer">
                         <label for="name" id="name-label"> Name
-                            <input class="inputwidth inputmargin" type="text" id="name" placeholder="Enter your name" name="name">
+                            <input class="inputwidth inputmargin" type="text" id="name" placeholder="Enter your name"
+                                name="name">
                         </label>
                     </div>
-                    <br>
+
                     <div id="emaildiv" class="labelinputcontainer">
                         <label for="email" id="email-label"> Email
-                            <input class="inputwidth inputmargin" type="email" id="email" placeholder="Enter your email" name="email">
+                            <input class="inputwidth inputmargin" type="email" id="email" placeholder="Enter your email"
+                                name="email">
                         </label>
                     </div>
-                    <br>
+
                     <div id="agediv" class="labelinputcontainer">
                         <label for="number" id="number-label"> Age </label>
-                            <input class="inputwidth inputmargin" type="number" id="number" placeholder="Age" name="number">
-                    
+                        <input class="inputwidth inputmargin" type="number" id="number" placeholder="Age" name="number">
+
                     </div>
-                    <br>
-                    <div class="radiocontainer labelinputcontainer" id="genderdiv" >
+
+                    <div class="radiocontainer labelinputcontainer" id="genderdiv">
                         <div>
                             <p>Please specify your gender:</p>
                             <input class="inputmargin" type="radio" name="gender" id="male">
@@ -54,7 +62,7 @@
                             <label for="nospec"> I'd rather not specify</label>
                         </div>
                     </div>
-                    <br>
+
                     <div id="sourcediv" class="labelinputcontainer">
                         <label for="dropdown"> Where did you hear about us?
                             <select required class="inputwidth inputmargin" name="dropdown" id="dropdown">
@@ -66,34 +74,32 @@
                             </select>
                         </label>
                     </div>
-                    <br>
+
                     <div id="checkboxdiv" class="labelinputcontainer">
-                        <p>Which services are you interested in?</p>
+                        <p>Newsletter?</p>
                         <input class="inputmargin" type="checkbox" id="c1" name="c1" value="c1">
-                        <label for="c1">Option 1</label><br>
-                        <input class="inputmargin" type="checkbox" id="c2" name="c2" value="c2">
-                        <label for="c2">Option 2</label><br>
-                        <input class="inputmargin" type="checkbox" id="c3" name="c3" value="c3">
-                        <label for="c3">Option 3</label><br>
-                        <input class="inputmargin" type="checkbox" id="c4" name="c4" value="c4">
-                        <label for="c4">Option 4</label><br>
+                        <label for="c1">Yes, please</label><br>
+
+
+
                     </div>
-                    <br>
+
                     <div id="messagediv" class="labelinputcontainer">
                         <p>Enter a message (optional)</p>
-                        <textarea class="inputwidth inputmargin" name="message" id="message" cols="30" rows="5"></textarea>
+                        <textarea class="inputwidth inputmargin" name="message" id="message" cols="30"
+                            rows="5"></textarea>
                     </div>
-                    <br>
+
                     <div id="buttondiv" class="labelinputcontainer">
                         <input class="inputwidth button" type="submit" id="submit" name="submit" value="submit">
                     </div>
                 </form>
                 <br>
             </div>
-         </div>
-        
-        
-            
+        </div>
+
+
+
 
 
 
@@ -105,4 +111,5 @@
 
     </div>
 </body>
+
 </html>
